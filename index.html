@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <title>Abdurehim Seid - portfolio</title>
+    <link rel="stylesheet" href="styles/style.css" />
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <nav id="navbar">
+        <a href="#home" class="nav-logo">AB</a>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="#contact" class="btn-talk">Let's Talk</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+            <i class="fa-solid fa-moon" id="themeIcon"></i>
+        </button>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+
+        <!-- background grid decoration -->
+        <div class="hero-bg-grid" aria-hidden="true"></div>
+        <!-- floating blobs -->
+        <div class="hero-blob hero-blob-1" aria-hidden="true"></div>
+        <div class="hero-blob hero-blob-2" aria-hidden="true"></div>
+
+        <div class="hero-center">
+
+            <!-- avatar -->
+            <div class="hero-avatar">
+                <div class="hero-avatar-ring"></div>
+                <div class="hero-avatar-inner">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+            </div>
+
+            <!-- available badge -->
+            <span class="hero-available-badge">
+                <span class="badge-dot"></span> Available for work
+            </span>
+
+            <!-- text -->
+            <p class="hero-greeting">Hey there, I'm</p>
+            <h1 class="hero-name">Abdurehim Seid</h1>
+            <div class="hero-role-wrap">
+                <span class="hero-role-prefix">&lt;</span>
+                <span class="hero-role" id="heroRole">Full Stack Developer</span>
+                <span class="hero-role-suffix"> /&gt;</span>
+            </div>
+            <p class="hero-sub">Focused on building responsive, performant, and user-friendly websites with clean UI using modern technologies.</p>
+
+            <!-- buttons -->
+            <div class="hero-btns">
+                <a href="#projects" class="btn-primary"><i class="fa-solid fa-rocket"></i> View Projects</a>
+                <a href="cv/ABDUREHIM CV.pdf" class="btn-secondary" target="_blank"><i class="fa-solid fa-download"></i> Download CV</a>
+            </div>
+
+            <!-- quick stats row -->
+            <div class="hero-stats">
+                <div class="hero-stat-chip">
+                    <span class="hero-stat-num">1+</span>
+                    <span class="hero-stat-label">Yrs Experience</span>
+                </div>
+                <div class="hero-stat-divider"></div>
+                <div class="hero-stat-chip">
+                    <span class="hero-stat-num">5+</span>
+                    <span class="hero-stat-label">Projects Built</span>
+                </div>
+                <div class="hero-stat-divider"></div>
+                <div class="hero-stat-chip">
+                    <span class="hero-stat-num">12+</span>
+                    <span class="hero-stat-label">Technologies</span>
+                </div>
+            </div>
+
+            <!-- scroll hint -->
+            <a href="#about" class="hero-scroll-hint" aria-label="Scroll to about">
+                <i class="fa-solid fa-chevron-down"></i>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <h2>About me</h2>
+
+        <div class="about-grid">
+
+            <!-- LEFT: bio card -->
+            <div class="about-bio-card">
+                <div class="about-bio-header">
+                    <div class="about-bio-avatar"><i class="fa-solid fa-user-astronaut"></i></div>
+                    <div>
+                        <p class="about-bio-name">Abdurehim Seid</p>
+                        <p class="about-bio-role"><span class="gradient-text">Full Stack Developer</span></p>
+                    </div>
+                </div>
+                <div class="about-timeline">
+                    <div class="about-tl-item">
+                        <div class="about-tl-dot"></div>
+                        <p>Passionate about transforming ideas into responsive, user-friendly web experiences using HTML, CSS, and JavaScript.</p>
+                    </div>
+                    <div class="about-tl-item">
+                        <div class="about-tl-dot"></div>
+                        <p>Strong focus on performance, accessibility, and clean design — turning complex problems into simple, elegant solutions.</p>
+                    </div>
+                    <div class="about-tl-item">
+                        <div class="about-tl-dot"></div>
+                        <p>Always exploring new tools and technologies to improve skills and deliver better digital products.</p>
+                    </div>
+                </div>
+                <div class="about-bio-footer">
+                    <a href="#contact" class="btn-primary">Get in Touch</a>
+                    <a href="#projects" class="btn-secondary">View Projects</a>
+                </div>
+            </div>
+
+            <!-- RIGHT: stats + info cards -->
+            <div class="about-right">
+
+                <div class="about-cards-grid">
+                    <div class="about-info-card">
+                        <div class="about-info-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <span class="about-info-num">1+</span>
+                        <span class="about-info-label">Years Learning</span>
+                    </div>
+                    <div class="about-info-card">
+                        <div class="about-info-icon"><i class="fa-solid fa-folder-open"></i></div>
+                        <span class="about-info-num">5+</span>
+                        <span class="about-info-label">Projects Built</span>
+                    </div>
+                    <div class="about-info-card">
+                        <div class="about-info-icon"><i class="fa-solid fa-code"></i></div>
+                        <span class="about-info-num">12+</span>
+                        <span class="about-info-label">Technologies</span>
+                    </div>
+                    <div class="about-info-card">
+                        <div class="about-info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <span class="about-info-num" style="font-size:1rem;">Any where</span>
+                        <span class="about-info-label">Remote</span>
+                    </div>
+                </div>
+
+                <div class="about-focus-card">
+                    <p class="about-focus-title"><i class="fa-solid fa-bullseye"></i> Current Focus</p>
+                    <div class="about-focus-tags">
+                        <span class="focus-tag">React</span>
+                        <span class="focus-tag">Node.js</span>
+                        <span class="focus-tag">Back Development</span>
+                        <span class="focus-tag">UI/UX</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+        <h2>Tools &amp; Technologies.</h2>
+        <div class="marquee-wrapper">
+            <div class="marquee-track">
+                
+            <div class="tool-card">
+                <i class="devicon-html5-plain colored"></i>
+               <span class="tool-name">HTML5</span><span class="tool-cat">Markup</span>
+            </div>
+
+                <div class="tool-card">
+                    <i class="devicon-css3-plain colored"></i>
+                    <span class="tool-name">CSS3</span><span class="tool-cat">Styling</span>
+                </div>
+                <div class="tool-card"><i class="devicon-javascript-plain colored"></i><span class="tool-name">JavaScript</span><span class="tool-cat">Language</span></div>
+                <div class="tool-card"><i class="devicon-bootstrap-plain colored"></i><span class="tool-name">Bootstrap</span><span class="tool-cat">Framework</span></div>
+                <div class="tool-card"><i class="devicon-tailwindcss-original colored"></i><span class="tool-name">Tailwind CSS</span><span class="tool-cat">Framework</span></div>
+                <div class="tool-card"><i class="devicon-react-original colored"></i><span class="tool-name">React</span><span class="tool-cat">Library</span></div>
+                <div class="tool-card"><i class="devicon-nodejs-plain colored"></i><span class="tool-name">Node.js</span><span class="tool-cat">Runtime</span></div>
+                <div class="tool-card"><i class="devicon-express-original express-icon"></i><span class="tool-name">Express.js</span><span class="tool-cat">Framework</span></div>
+                <div class="tool-card"><i class="devicon-mysql-plain colored"></i><span class="tool-name">MySQL</span><span class="tool-cat">Database</span></div>
+                <div class="tool-card"><i class="devicon-git-plain colored"></i><span class="tool-name">Git</span><span class="tool-cat">Version Control</span></div>
+                <div class="tool-card"><i class="devicon-github-original colored"></i><span class="tool-name">GitHub</span><span class="tool-cat">Collaboration</span></div>
+                <div class="tool-card"><i class="devicon-cplusplus-plain colored"></i><span class="tool-name">C++</span><span class="tool-cat">Language</span></div>
+                <!-- duplicate set for seamless loop -->
+                <div class="tool-card" aria-hidden="true"><i class="devicon-html5-plain colored"></i><span class="tool-name">HTML5</span><span class="tool-cat">Markup</span></div>
+                <div class="tool-card" aria-hidden="true"><i class="devicon-css3-plain colored"></i><span class="tool-name">CSS3</span><span class="tool-cat">Styling</span></div>
+                <div class="tool-card" aria-hidden="true"><i class="devicon-javascript-plain colored"></i><span class="tool-name">JavaScript</span><span class="tool-cat">Language</span></div>
+                <div class="tool-card" aria-hidden="true"><i class="devicon-bootstrap-plain colored"></i><span class="tool-name">Bootstrap</span><span class="tool-cat">Framework</span></div>
+                <div class="tool-card" aria-hidden="true"><i class="devicon-tailwindcss-original colored"></i><span class="tool-name">Tailwind CSS</span><span class="tool-cat">Framework</span></div>
+                <div class="tool-card" aria-hidden="true"><i class="devicon-react-original colored"></i><span class="tool-name">React</span><span class="tool-cat">Library</span></div>
+                <div class="tool-card" aria-hidden="true"><i class="devicon-nodejs-plain colored"></i><span class="tool-name">Node.js</span><span class="tool-cat">Runtime</span></div>
+                <div class="tool-card" aria-hidden="true"><i class="devicon-express-original express-icon"></i><span class="tool-name">Express.js</span><span class="tool-cat">Framework</span></div>
+                <div class="tool-card" aria-hidden="true"><i class="devicon-mysql-plain colored"></i><span class="tool-name">MySQL</span><span class="tool-cat">Database</span></div>
+                <div class="tool-card" aria-hidden="true"><i class="devicon-git-plain colored"></i><span class="tool-name">Git</span><span class="tool-cat">Version Control</span></div>
+                <div class="tool-card" aria-hidden="true"><i class="devicon-github-original colored"></i><span class="tool-name">GitHub</span><span class="tool-cat">Collaboration</span></div>
+                <div class="tool-card" aria-hidden="true"><i class="devicon-cplusplus-plain colored"></i><span class="tool-name">C++</span><span class="tool-cat">Language</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <div class="projects-header">
+            <div>
+                <h2>Featured Projects.</h2>
+            </div>
+        </div>
+
+        <div class="projects-grid">
+
+            <!-- card 1 -->
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="images/apple.png" alt="Apple homepage clone">
+                    <div class="project-overlay">
+                        <a href="#" class="overlay-btn" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="#" class="overlay-btn" aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <div class="project-meta">
+                        <span class="project-num">01</span>
+                        <span class="project-type">Clone</span>
+                    </div>
+                    <h3>Apple Homepage Reconstruction</h3>
+                    <p>A pixel-perfect CSS clone of the Apple homepage, demonstrating deep understanding of modern CSS layouts, responsive design, and precise styling.</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Bootstrap</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="proj-link"><i class="fa-brands fa-github"></i> GitHub</a>
+                        <a href="#" class="proj-link proj-link--primary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- card 2 -->
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="images/calculator.png" alt="Calculator app">
+                    <div class="project-overlay">
+                        <a href="#" class="overlay-btn" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="#" class="overlay-btn" aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <div class="project-meta">
+                        <span class="project-num">02</span>
+                        <span class="project-type">App</span>
+                    </div>
+                    <h3>Simple Calculator</h3>
+                    <p>A working digital calculator built with vanilla JavaScript, focusing on robust logic and clean state management.</p>
+                    <div class="project-tags">
+                        <span class="tag">JavaScript</span><span class="tag">CSS</span><span class="tag">HTML</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="proj-link"><i class="fa-brands fa-github"></i> GitHub</a>
+                        <a href="#" class="proj-link proj-link--primary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- card 3 -->
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="images/amazon-clone.png" alt="Amazon clone">
+                    <div class="project-overlay">
+                        <a href="#" class="overlay-btn" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="#" class="overlay-btn" aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <div class="project-meta">
+                        <span class="project-num">03</span>
+                        <span class="project-type">Clone</span>
+                    </div>
+                    <h3>Amazon Clone Website</h3>
+                    <p>Full-page clone replicating the navigation, hero banner, product grid, and footer using HTML and CSS.</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="proj-link"><i class="fa-brands fa-github"></i> GitHub</a>
+                        <a href="#" class="proj-link proj-link--primary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- card 4 -->
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="images/weather-app.png" alt="Weather app">
+                    <div class="project-overlay">
+                        <a href="#" class="overlay-btn" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="#" class="overlay-btn" aria-label="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <div class="project-meta">
+                        <span class="project-num">04</span>
+                        <span class="project-type">App</span>
+                    </div>
+                    <h3>Weather App</h3>
+                    <p>Real-time weather app fetching live API data — shows temperature, conditions, and forecasts for any city.</p>
+                    <div class="project-tags">
+                        <span class="tag">JavaScript</span><span class="tag">CSS</span><span class="tag">HTML</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="proj-link"><i class="fa-brands fa-github"></i> GitHub</a>
+                        <a href="#" class="proj-link proj-link--primary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+
+        <div class="contact-header">
+            <h2>let's<br><span class="gradient-text">connect</span></h2>
+            <p class="contact-sub">I'm available for freelance work, full-time roles, and collaborations. Tell me what you need and let's get started.</p>
+        </div>
+
+        <div class="contact-layout">
+
+            <!-- LEFT: info + social cards — slides in from left -->
+            <div class="contact-left slide-left">
+
+                <p class="contact-left-intro">Whether you need a website built from scratch, a feature added, or a full-stack app developed — I'm ready to help. Reach out through any channel below and I'll get back to you within 24 hours.</p>
+
+                <div class="social-cards">
+                    <a href="https://github.com/abdurehims" class="social-card" target="_blank" rel="noopener">
+                        <span class="social-card-icon github-color"><i class="fa-brands fa-github"></i></span>
+                        <div class="social-card-info">
+                            <span class="social-card-name">GitHub</span>
+                            <span class="social-card-handle">@abdurehims</span>
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right-from-square social-card-arrow"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/abdurehims" class="social-card" target="_blank" rel="noopener">
+                        <span class="social-card-icon linkedin-color"><i class="fa-brands fa-linkedin-in"></i></span>
+                        <div class="social-card-info">
+                            <span class="social-card-name">LinkedIn</span>
+                            <span class="social-card-handle">Abdurehim Seid</span>
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right-from-square social-card-arrow"></i>
+                    </a>
+                    <a href="mailto:abdurehimseidd@gmail.com" class="social-card">
+                        <span class="social-card-icon email-color"><i class="fa-solid fa-envelope"></i></span>
+                        <div class="social-card-info">
+                            <span class="social-card-name">Email</span>
+                            <span class="social-card-handle">abdurehimseidd@gmail.com</span>
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right-from-square social-card-arrow"></i>
+                    </a>
+                    <div class="social-card">
+                        <span class="social-card-icon location-color"><i class="fa-solid fa-location-dot"></i></span>
+                        <div class="social-card-info">
+                            <span class="social-card-name">Location</span>
+                            <span class="social-card-handle">Open to work — remote & on-site</span>
+                        </div>
+                        <span class="status-dot-badge"><span></span>Open to work</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- RIGHT: contact form — slides in from right -->
+            <div class="contact-right slide-right">
+                <form class="contact-form" onsubmit="handleSubmit(event)">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="fname">First Name</label>
+                            <input type="text" id="fname" name="fname" placeholder="John" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="lname">Last Name</label>
+                            <input type="text" id="lname" name="lname" placeholder="Doe" required />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="you@example.com" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">What do you need?</label>
+                        <input type="text" id="subject" name="subject" placeholder="e.g. Build a full-stack web app" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Project Details</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Describe your project — goals, timeline, budget, and anything else I should know..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary btn-submit">
+                        <i class="fa-solid fa-paper-plane"></i> Send Inquiry
+                    </button>
+                    <p class="form-success" id="formSuccess">✅ Inquiry sent! I'll get back to you within 24 hours.</p>
+                    <p class="form-error" id="formError">❌ Something went wrong. Please email me directly.</p>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Abdurehim Seid.</p>
+        <div class="footer-links">
+            <a href="https://github.com/abdurehims" target="_blank"> <i class="fa-brands fa-github"></i> GitHub</a>
+            <a href="https://www.linkedin.com/in/abdurehims?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"> <i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="scripts/scripts.js"></script>
+</body>
+
+</html>
