@@ -26,12 +26,12 @@ export default function Navbar({ showToast }) {
 
   const closeMobile = () => setMobileOpen(false);
 
-  // Smooth scroll to center handler
+  // Smooth scroll to top handler
   const handleNavClick = (e, sectionId) => {
     e.preventDefault();
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
     closeMobile();
   };
