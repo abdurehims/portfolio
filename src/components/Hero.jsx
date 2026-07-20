@@ -32,8 +32,8 @@ export default function Hero({ showToast }) {
           </SectionReveal>
           <SectionReveal>
             <div className="university-badge">
-              <FiMapPin size={16} color="#8b5cf6" />
-              <span>Modern, Responsive, and Scalable Web Applications.</span>
+              {/*<FiMapPin size={16} color="#8b5cf6" />*/}
+              <span> Full‑Stack Developer building modern, responsive, and scalable web applications with user‑first design..</span>
             </div>
           </SectionReveal>
 
