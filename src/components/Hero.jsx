@@ -1,80 +1,144 @@
-import { FiDownload, FiMapPin } from 'react-icons/fi';
+import { motion } from 'framer-motion';
+import { FiDownload, FiArrowRight } from 'react-icons/fi';
 import useTypewriter from '../hooks/useTypewriter';
-import SectionReveal from './SectionReveal';
 import profileImg from '../images/abdurehim-profile.jpg';
 import cvFile from '../assets/cv/ABDUREHIM CV.pdf';
 
+const fadeUp = (delay = 0) => ({
+  initial: { opacity: 0, y: 28 },
+  animate: { opacity: 1, y: 0 },
+  transition: { duration: 0.7, delay, ease: [0.16, 1, 0.3, 1] },
+});
+
 export default function Hero({ showToast }) {
-  const typedText = useTypewriter([
-    'Full-Stack Developer',
-    'React Developer',
-    'Node js Developer',
-    'Mobile Unlocker'
-  ], 80, 50, 2000);
+  const typedText = useTypewriter(
+    ['Full-Stack Developer', 'React Developer', 'Node.js Developer', 'Mobile Unlocker'],
+    80, 50, 2000
+  );
 
   return (
-    <section id="home" className="hero-section">
-      <div className="hero-grid">
-        <div className="hero-content">
-          <SectionReveal>
-            <p className="hero-label font-mono">{'< Hello World />'}</p>
-          </SectionReveal>
-          <SectionReveal>
-            <h1 className="hero-name">
-              Abdurehim <span className="gradient-text">Seid</span>
-            </h1>
-          </SectionReveal>
-          <SectionReveal>
-            <div className="typewriter-wrapper">
-              <span className="typewriter">{typedText}</span>
-              <span className="cursor-blink">|</span>
-            </div>
-          </SectionReveal>
-          <SectionReveal>
-            <div className="university-badge">
-              <FiMapPin size={16} color="#8b5cf6" />
-              <span>Modern, Responsive, and Scalable Web Applications.</span>
-            </div>
-          </SectionReveal>
+    <section
+      id="home"
+      className="relative z-[2] flex items-center overflow-hidden"
+      style={{ minHeight: '100vh', paddingTop: '68px' }}
+    >
+      {/* Grid pattern */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0"
+        style={{
+          backgroundImage:
+            'linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),' +
+            'linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px)',
+          backgroundSize: '60px 60px',
+          WebkitMaskImage: 'radial-gradient(ellipse 80% 80% at 50% 50%,black 30%,transparent 100%)',
+          maskImage: 'radial-gradient(ellipse 80% 80% at 50% 50%,black 30%,transparent 100%)',
+        }}
+      />
 
-          {/*<SectionReveal>
-            <div className="skill-badges">
-              {['HTML', 'CSS', 'JavaScript', 'React', 'Node.js', 'Express.js', 'MySQL', 'Mobile Unlocker'].map(skill => (
-                <span key={skill} className="badge">{skill}</span>
-              ))}
-            </div>
-          </SectionReveal> */}
+      <div className="relative z-[1] mx-auto w-full max-w-[1200px] px-6 grid grid-cols-1 lg:grid-cols-[1fr_0.85fr] gap-12 lg:gap-20 items-center">
 
-          <SectionReveal className="hero-buttons">
-            <a href="#projects" className="btn-primary">View My Work</a>
+        {/* ── Left ── */}
+        <div className="flex flex-col items-start max-lg:items-center max-lg:text-center">
+
+          {/* Status badge */}
+          <motion.span
+            {...fadeUp(0.1)}
+            className="mb-8 inline-flex items-center gap-2 rounded-full border border-emerald-500/30 bg-emerald-500/10 px-4 py-1.5 font-mono text-[.72rem] tracking-wide text-emerald-400"
+          >
+            <span className="inline-block h-[7px] w-[7px] flex-shrink-0 rounded-full bg-emerald-500 animate-status-pulse" />
+            Available for work
+          </motion.span>
+
+          {/* Eyebrow */}
+          <motion.p {...fadeUp(0.2)} className="eyebrow mb-4 max-lg:eyebrow-center max-lg:before:hidden max-lg:justify-center">
+            {'< Hello There />'}
+          </motion.p>
+
+          {/* Name */}
+          <motion.h1
+            {...fadeUp(0.3)}
+            className="mb-5 font-heading font-extrabold leading-[1.08] tracking-[-1.5px] text-[#38BDF8]"
+            style={{ fontSize: 'clamp(2.6rem,6vw,4.25rem)' }}
+          >
+            Abdurehim <span className="text-gradient">Seid</span>
+          </motion.h1>
+
+          {/* Typewriter */}
+          <motion.div
+            {...fadeUp(0.4)}
+            className="mb-5 flex min-h-[2rem] items-center gap-0.5 font-mono text-lg text-[#8a8aaa]"
+          >
+            <span>{typedText}</span>
+            <span className="font-light text-cyan animate-blink">|</span>
+          </motion.div>
+
+          {/* Description */}
+          <motion.p
+            {...fadeUp(0.5)}
+            className="mb-8 max-w-[480px] text-base leading-[1.75] text-[#8a8aaa] max-lg:max-w-full"
+          >
+            I build fast, modern, and scalable web applications that help businesses grow.
+            Every project focuses on{' '}
+            <strong className="font-semibold text-[#f0f0f5]">performance</strong>,
+            clean code, and delivering real user value.
+          </motion.p>
+
+          {/* CTAs */}
+          <motion.div {...fadeUp(0.6)} className="flex flex-wrap gap-3.5 max-lg:justify-center">
+            <a
+              href="#projects"
+              className="tw-interactive relative inline-flex items-center gap-2 overflow-hidden rounded-full px-7 py-3 text-[.9rem] font-semibold text-[#060609] bg-gradient-cta shadow-glow-cyan-btn transition-all duration-200 hover:-translate-y-0.5 hover:scale-[1.03] hover:shadow-glow-cyan-btn-hover active:scale-[.98]"
+            >
+              View My Work <FiArrowRight />
+            </a>
             <a
               href={cvFile}
               download="Abdurehim_Seid_CV.pdf"
-              className="btn-outline"
-              onClick={() => showToast('CV downloaded successfully!')}
+              onClick={() => showToast('CV downloaded!')}
+              className="tw-interactive inline-flex items-center gap-2 rounded-full border border-white/[.15] bg-white/[.04] px-7 py-3 text-[.9rem] font-semibold text-[#f0f0f5] transition-all duration-200 hover:-translate-y-0.5 hover:scale-[1.03] hover:border-cyan/60 hover:bg-cyan/[.07] hover:shadow-[0_0_24px_rgba(0,229,255,.18)] active:scale-[.98]"
             >
               <FiDownload /> Download CV
             </a>
-          </SectionReveal>
+          </motion.div>
         </div>
 
-        {/* 🌟 NEW: Right column with profile image */}
-        <div className="hero-image-wrapper">
-          <div className="hero-image-container">
-            <img  src={profileImg}
-                alt="Abdurehim Seid portrait"
-                className="hero-profile-img"
-                onError={(e) => {
+        {/* ── Profile image ── */}
+        <motion.div
+          className="flex items-center justify-center"
+          initial={{ opacity: 0, scale: 0.88 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.9, delay: 0.35, ease: [0.16, 1, 0.3, 1] }}
+        >
+          <div className="relative" style={{ width: 'clamp(240px,30vw,320px)', height: 'clamp(240px,30vw,320px)' }}>
+            {/* Spinning conic ring */}
+            <div
+              className="absolute rounded-full animate-spin-slow"
+              style={{ inset: '-12px', padding: '2px', background: 'conic-gradient(from 0deg,#00e5ff,#8b5cf6,#4d7cff,#00e5ff)' }}
+            >
+              <div className="h-full w-full rounded-full bg-[#060609]" />
+            </div>
+            {/* Photo */}
+            <div className="absolute inset-0 overflow-hidden rounded-full bg-white/[.04]">
+              <img
+                src={profileImg}
+                alt="Abdurehim Seid — Full-Stack Developer"
+                className="h-full w-full rounded-full object-cover object-top"
+                loading="eager"
+                onError={e => {
                   e.target.onerror = null;
-                  e.target.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="280" height="280" viewBox="0 0 100 100"%3E%3Ccircle cx="50" cy="50" r="45" fill="%2316161f" stroke="%2300e5ff" stroke-width="2"/%3E%3Ctext x="50" y="55" text-anchor="middle" fill="%2300e5ff" font-size="20" font-family="sans-serif"%3EImage%3C/text%3E%3C/svg%3E';
+                  e.target.src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='320'%3E%3Ccircle cx='160' cy='160' r='155' fill='%2316161f'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' fill='%2300e5ff' font-size='18' font-family='sans-serif'%3EAbdurehim%3C/text%3E%3C/svg%3E";
                 }}
-                loading="lazy"
               />
-
-            {/* decorative glow */}
-            <div className="image-glow" />
+            </div>
+            {/* Glow */}
+            <div
+              className="pointer-events-none absolute -inset-10 -z-10 rounded-full animate-glow-pulse"
+              style={{ background: 'radial-gradient(circle,rgba(139,92,246,.18) 0%,rgba(0,229,255,.08) 50%,transparent 70%)' }}
+            />
           </div>
-        </div>
+        </motion.div>
+
       </div>
     </section>
   );

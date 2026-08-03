@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { AnimatePresence } from 'framer-motion';
 import LoadingScreen from './components/LoadingScreen';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
@@ -11,6 +12,7 @@ import CustomCursor from './components/CustomCursor';
 import ScrollProgress from './components/ScrollProgress';
 import ParticlesCanvas from './components/ParticlesCanvas';
 import Toast from './components/Toast';
+import useTheme from './hooks/useTheme';
 import './App.css';
 
 function App() {
@@ -18,24 +20,28 @@ function App() {
   const [toast, setToast] = useState({ show: false, message: '' });
   const [cursorHidden, setCursorHidden] = useState(false);
 
+  // Permanently apply dark class — no toggle
+  useTheme();
+
   useEffect(() => {
-    // Simulate loading time
-    const timer = setTimeout(() => setLoading(false), 1800);
-    return () => clearTimeout(timer);
+    const t = setTimeout(() => setLoading(false), 1900);
+    return () => clearTimeout(t);
   }, []);
 
-  const showToast = (message) => {
-    setToast({ show: true, message });
-    setTimeout(() => setToast({ show: false, message: '' }), 2500);
+  const showToast = (msg) => {
+    setToast({ show: true, message: msg });
+    setTimeout(() => setToast({ show: false, message: '' }), 2600);
   };
 
   return (
     <>
-      {loading && <LoadingScreen />}
-       <CustomCursor hidden={cursorHidden} />
+      <AnimatePresence>{loading && <LoadingScreen key="loading" />}</AnimatePresence>
+
+      <CustomCursor hidden={cursorHidden} />
       <ScrollProgress />
       <ParticlesCanvas />
-      <Navbar showToast={showToast} />
+      <Navbar />
+
       <main>
         <Hero showToast={showToast} />
         <About />
@@ -43,8 +49,12 @@ function App() {
         <Projects />
         <Contact showToast={showToast} />
       </main>
+
       <Footer onCircleHover={setCursorHidden} />
-      {toast.show && <Toast message={toast.message} />}
+
+      <AnimatePresence>
+        {toast.show && <Toast key="toast" message={toast.message} />}
+      </AnimatePresence>
     </>
   );
 }
