@@ -211,7 +211,7 @@ It really helps and motivates me to build more amazing projects.
 
 ### Abdurehim Seid
 
-📧 Email: [your-email@example.com](mailto:your-email@example.com)
+📧 Email: [abdurehimseidd@example.com](mailto:abdurehimseidd@example.com)
 
 🌐 Portfolio: https://abdurehims.vercel.app
 
