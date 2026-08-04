@@ -73,7 +73,6 @@ export default function Hero({ showToast }) {
             <span className="font-light text-cyan animate-blink">|</span>
           </motion.div>
 
-          {/* Description */}
           <motion.p
             {...fadeUp(0.5)}
             className="mb-8 max-w-[480px] text-base leading-[1.75] text-[#8a8aaa] max-lg:max-w-full"
