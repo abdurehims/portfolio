@@ -23,10 +23,14 @@ export default function Navbar() {
     return () => { document.body.style.overflow = ''; };
   }, [mobileOpen]);
 
-  const go = (e, id) => {
+  // Smooth scroll to center handler
+  const handleNavClick = (e, sectionId) => {
     e.preventDefault();
-    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    setMobileOpen(false);
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+    closeMobile();
   };
 
   const scrolled = scrollY > 60;

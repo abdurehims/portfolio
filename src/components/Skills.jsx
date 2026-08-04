@@ -11,7 +11,6 @@ export default function Skills() {
           style={{ fontSize: 'clamp(2rem,5vw,2.75rem)' }}>
           Technologies I Work With
         </h2>
-        {/* <p className="mb-14 font-mono text-[.8rem] uppercase tracking-[2.5px] text-[#55556a]">tools of the trade</p> */}
       </SectionReveal>
 
       <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 xl:grid-cols-4 mt-12">

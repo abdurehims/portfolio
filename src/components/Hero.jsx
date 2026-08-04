@@ -17,80 +17,40 @@ export default function Hero({ showToast }) {
   );
 
   return (
-    <section
-      id="home"
-      className="relative z-[2] flex items-center overflow-hidden"
-      style={{ minHeight: '100vh', paddingTop: '68px' }}
-    >
-      {/* Grid pattern */}
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute inset-0"
-        style={{
-          backgroundImage:
-            'linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),' +
-            'linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px)',
-          backgroundSize: '60px 60px',
-          WebkitMaskImage: 'radial-gradient(ellipse 80% 80% at 50% 50%,black 30%,transparent 100%)',
-          maskImage: 'radial-gradient(ellipse 80% 80% at 50% 50%,black 30%,transparent 100%)',
-        }}
-      />
+    <section id="home" className="hero-section">
+      <div className="hero-grid">
+        <div className="hero-content">
+          <SectionReveal>
+            <p className="hero-label font-mono">{'< Hello World />'}</p>
+          </SectionReveal>
+          <SectionReveal>
+            <h1 className="hero-name">
+              Abdurehim <span className="gradient-text">Seid</span>
+            </h1>
+          </SectionReveal>
+          <SectionReveal>
+            <div className="typewriter-wrapper">
+              <span className="typewriter">{typedText}</span>
+              <span className="cursor-blink">|</span>
+            </div>
+          </SectionReveal>
+          <SectionReveal>
+            <div className="university-badge">
+              <FiMapPin size={16} color="#8b5cf6" />
+              <span>Modern, Responsive, and Scalable Web Applications.</span>
+            </div>
+          </SectionReveal>
 
-      <div className="relative z-[1] mx-auto w-full max-w-[1200px] px-6 grid grid-cols-1 lg:grid-cols-[1fr_0.85fr] gap-12 lg:gap-20 items-center">
+          {/*<SectionReveal>
+            <div className="skill-badges">
+              {['HTML', 'CSS', 'JavaScript', 'React', 'Node.js', 'Express.js', 'MySQL', 'Mobile Unlocker'].map(skill => (
+                <span key={skill} className="badge">{skill}</span>
+              ))}
+            </div>
+          </SectionReveal> */}
 
-        {/* ── Left ── */}
-        <div className="flex flex-col items-start max-lg:items-center max-lg:text-center">
-
-          {/* Status badge */}
-          <motion.span
-            {...fadeUp(0.1)}
-            className="mb-8 inline-flex items-center gap-2 rounded-full border border-emerald-500/30 bg-emerald-500/10 px-4 py-1.5 font-mono text-[.72rem] tracking-wide text-emerald-400"
-          >
-            <span className="inline-block h-[7px] w-[7px] flex-shrink-0 rounded-full bg-emerald-500 animate-status-pulse" />
-            Available for work
-          </motion.span>
-
-          {/* Eyebrow */}
-          <motion.p {...fadeUp(0.2)} className="eyebrow mb-4 max-lg:eyebrow-center max-lg:before:hidden max-lg:justify-center">
-            {'< Hello There />'}
-          </motion.p>
-
-          {/* Name */}
-          <motion.h1
-            {...fadeUp(0.3)}
-            className="mb-5 font-heading font-extrabold leading-[1.08] tracking-[-1.5px] text-[#38BDF8]"
-            style={{ fontSize: 'clamp(2.6rem,6vw,4.25rem)' }}
-          >
-            Abdurehim <span className="text-gradient">Seid</span>
-          </motion.h1>
-
-          {/* Typewriter */}
-          <motion.div
-            {...fadeUp(0.4)}
-            className="mb-5 flex min-h-[2rem] items-center gap-0.5 font-mono text-lg text-[#8a8aaa]"
-          >
-            <span>{typedText}</span>
-            <span className="font-light text-cyan animate-blink">|</span>
-          </motion.div>
-
-          <motion.p
-            {...fadeUp(0.5)}
-            className="mb-8 max-w-[480px] text-base leading-[1.75] text-[#8a8aaa] max-lg:max-w-full"
-          >
-            I build fast, modern, and scalable web applications that help businesses grow.
-            Every project focuses on{' '}
-            <strong className="font-semibold text-[#f0f0f5]">performance</strong>,
-            clean code, and delivering real user value.
-          </motion.p>
-
-          {/* CTAs */}
-          <motion.div {...fadeUp(0.6)} className="flex flex-wrap gap-3.5 max-lg:justify-center">
-            <a
-              href="#projects"
-              className="tw-interactive relative inline-flex items-center gap-2 overflow-hidden rounded-full px-7 py-3 text-[.9rem] font-semibold text-[#060609] bg-gradient-cta shadow-glow-cyan-btn transition-all duration-200 hover:-translate-y-0.5 hover:scale-[1.03] hover:shadow-glow-cyan-btn-hover active:scale-[.98]"
-            >
-              View My Work <FiArrowRight />
-            </a>
+          <SectionReveal className="hero-buttons">
+            <a href="#projects" className="btn-primary">View My Work</a>
             <a
               href={cvFile}
               download="Abdurehim_Seid_CV.pdf"
