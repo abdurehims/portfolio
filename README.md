@@ -1,397 +1,278 @@
----
-
-# 🎨 UI & Development Showcase
-
+````markdown
 <div align="center">
 
-<table>
+# 🚀 Personal Portfolio Website
 
-<tr>
+### Designed & Developed by **Abdurehim Seid**
 
-<td width="33%" align="center">
-
-## ⚛️ Frontend
-
-<img src="https://skillicons.dev/icons?i=react" width="60"/>
+A modern, responsive, and interactive portfolio built with **React**, **Tailwind CSS**, and **Vite** to showcase my skills, projects, and experience as a **Full Stack Web Developer**.
 
 <br>
 
-Building interactive,
-responsive,
-and modern interfaces.
+<p>
 
-</td>
-
-
-<td width="33%" align="center">
-
-## ⚙️ Backend
-
-<img src="https://skillicons.dev/icons?i=nodejs" width="60"/>
-
-<br>
-
-Creating APIs,
-server logic,
-and scalable systems.
-
-</td>
-
-
-<td width="33%" align="center">
-
-## 🗄 Database
-
-<img src="https://skillicons.dev/icons?i=mysql" width="60"/>
-
-<br>
-
-Designing efficient
-data structures
-and queries.
-
-</td>
-
-</tr>
-
-</table>
-
-</div>
-
----
-
-# 🧱 My Development Approach
-
-<div align="center">
-
-<table>
-
-<tr>
-
-<td>
-
-### 1️⃣ Understand
-
-🎯 Analyze requirements
-
-📝 Plan features
-
-💡 Find the best solution
-
-</td>
-
-<td>
-
-### 2️⃣ Design
-
-🎨 Create UI structure
-
-📱 Make responsive layouts
-
-⚡ Focus on user experience
-
-</td>
-
-<td>
-
-### 3️⃣ Develop
-
-💻 Write clean code
-
-🔗 Connect frontend & backend
-
-🧪 Test functionality
-
-</td>
-
-</tr>
-
-
-<tr>
-
-<td>
-
-### 4️⃣ Optimize
-
-🚀 Improve performance
-
-🔒 Secure applications
-
-📦 Refactor code
-
-</td>
-
-<td>
-
-### 5️⃣ Deploy
-
-☁️ Deploy applications
-
-🌍 Make projects accessible
-
-📊 Monitor performance
-
-</td>
-
-<td>
-
-### 6️⃣ Improve
-
-📚 Learn new technology
-
-🔥 Upgrade skills
-
-♻️ Build better versions
-
-</td>
-
-</tr>
-
-</table>
-
-</div>
-
----
-
-# 💎 Developer Bento Grid
-
-<div align="center">
-
-<table>
-
-<tr>
-
-<td width="50%">
-
-## 🚀 Current Project
-
-### Full Stack E-Commerce Platform
-
-Building a complete shopping experience with:
-
-- React frontend
-- Node.js backend
-- Express API
-- MySQL database
-- Modern UI
-
-</td>
-
-
-<td width="50%">
-
-## ⚡ Current Goal
-
-Become a professional:
-
-```
-Full Stack Engineer
-        +
-Software Architect
-        +
-Problem Solver
-```
-
-</td>
-
-</tr>
-
-
-<tr>
-
-<td width="50%">
-
-## 📚 Learning
-
-Currently improving:
-
-- Advanced React
-- Backend Architecture
-- Database Design
-- System Design
-
-</td>
-
-
-<td width="50%">
-
-## 🌍 Vision
-
-Create software that:
-
-- Solves real problems
-- Helps people
-- Scales globally
-
-</td>
-
-</tr>
-
-</table>
-
-</div>
-
----
-
-# 🧪 Technologies I Work With
-
-<div align="center">
-
-```text
-Frontend
-━━━━━━━━━━━━━━━━━━━━━━
-
-HTML          ████████████████████ 100%
-CSS           ███████████████████░ 95%
-JavaScript    █████████████████░░░ 90%
-React         ████████████████░░░░ 85%
-Tailwind      ███████████████░░░░░ 85%
-
-
-Backend
-━━━━━━━━━━━━━━━━━━━━━━
-
-Node.js       ███████████████░░░░░ 80%
-Express.js    ███████████████░░░░░ 80%
-
-
-Database
-━━━━━━━━━━━━━━━━━━━━━━
-
-MySQL         ██████████████░░░░░░ 75%
-
-```
-
-</div>
-
----
-
-# 🌍 Collaboration
-
-<div align="center">
-
-I am interested in collaborating on:
-
-<br>
-
-🚀 Full Stack Applications
-
-<br>
-
-🌐 Open Source Projects
-
-<br>
-
-💡 Innovative Startup Ideas
-
-<br>
-
-🎨 UI/UX Focused Websites
-
-<br>
-
-📚 Educational Technology Projects
-
-</div>
-
----
-
-# 📌 Repository Highlights
-
-<div align="center">
-
-<a href="https://github.com/abdurehims">
-
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=abdurehims&repo=portfolio&theme=tokyonight"/>
-
+<a href="https://abdurehims.vercel.app">
+<img src="https://img.shields.io/badge/🌐_Live_Demo-Visit_Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white"/>
 </a>
 
-
-<a href="https://github.com/abdurehims">
-
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=abdurehims&repo=my-Projects&theme=tokyonight"/>
-
+<a href="https://github.com/abdurehims/portfolio">
+<img src="https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github"/>
 </a>
+
+</p>
+
+<p>
+
+<img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=white"/>
+
+<img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white"/>
+
+<img src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white"/>
+
+<img src="https://img.shields.io/badge/Responsive-✔-22C55E?style=flat-square"/>
+
+<img src="https://img.shields.io/badge/Open_Source-❤-EF4444?style=flat-square"/>
+
+</p>
 
 </div>
 
 ---
 
-# 📖 My Learning Roadmap
+# 📖 About
+
+This project is my personal developer portfolio where I showcase my:
+
+- 💻 Technical skills
+- 🚀 Featured projects
+- 👨‍💻 About me
+- 📄 Resume
+- 📬 Contact information
+
+The portfolio is designed with a modern UI, smooth animations, reusable React components, and a fully responsive layout to provide an excellent experience across all devices.
+
+---
+
+# 🌐 Live Website
+
+## 👉 https://abdurehims.vercel.app
+
+---
+
+# 📸 Preview
+
+> Add screenshots here after taking them.
 
 ```text
-                    FULL STACK DEVELOPER
+preview/
+├── desktop.png
+├── tablet.png
+└── mobile.png
+```
 
+Example:
 
-                         ▲
+```md
+<img src="./preview/desktop.png" width="100%">
 
-                 System Design
-                         │
+<br>
 
-                 Cloud & DevOps
-                         │
-
-              Backend Architecture
-                         │
-
-              Node.js + Express
-                         │
-
-                React Ecosystem
-                         │
-
-            JavaScript Fundamentals
-                         │
-
-              HTML + CSS Basics
-
-                         ▼
+<img src="./preview/mobile.png" width="35%">
 ```
 
 ---
 
-# 🔥 Developer Statistics
+# ✨ Features
 
-<div align="center">
-
-<img src="https://github-readme-stats.vercel.app/api/wakatime?username=abdurehims&theme=tokyonight&hide_border=true"/>
-
-</div>
-
----
-
-# 💬 Ask Me About
-
-<div align="center">
-
-| Topic | Skills |
-|---|---|
-| Frontend | React, JavaScript, Tailwind CSS |
-| Backend | Node.js, Express.js |
-| Database | MySQL |
-| Development | Git, GitHub, Deployment |
-| UI Design | Responsive Web Design |
-
-</div>
+- 🎨 Modern UI Design
+- 🌙 Dark Theme
+- 📱 Fully Responsive
+- ⚡ Fast Performance
+- ✨ Smooth Animations
+- 💻 Interactive Hero Section
+- 🧑‍💼 About Me
+- 🛠 Skills Showcase
+- 🚀 Featured Projects
+- 📄 Download Resume
+- 📬 Contact Section
+- 🔥 Optimized for Production
 
 ---
 
-# 🌟 Final Message
+# 🛠 Tech Stack
 
-<div align="center">
+## Frontend
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=25&pause=1000&color=38BDF8&center=true&width=700&lines=Thanks+for+visiting+my+profile!;Let's+build+something+amazing+together!;Keep+coding+%7C+Keep+learning+%7C+Keep+growing"/>
+- React.js
+- Tailwind CSS
+- JavaScript (ES6+)
+- HTML5
+- CSS3
+- Vite
 
-<br>
+## Libraries
 
-### ⭐ Follow my journey as I build the future with code.
+- React Icons
+- Font Awesome
+- Custom React Hooks
 
-</div>
+## Deployment
+
+- Vercel
+
+---
+
+# 📂 Project Structure
+
+```text
+portfolio/
+│
+├── public/
+│
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── hooks/
+│   ├── images/
+│   ├── styles/
+│   ├── App.jsx
+│   └── main.jsx
+│
+├── package.json
+├── vite.config.js
+└── README.md
+```
+
+---
+
+# 🚀 Getting Started
+
+Clone the repository
+
+```bash
+git clone https://github.com/abdurehims/portfolio.git
+```
+
+Go to the project folder
+
+```bash
+cd portfolio
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Start the development server
+
+```bash
+npm run dev
+```
+
+Build for production
+
+```bash
+npm run build
+```
+
+Preview production build
+
+```bash
+npm run preview
+```
+
+---
+
+# 🎯 Website Sections
+
+- 🏠 Home
+- 👨 About
+- 💻 Skills
+- 🚀 Projects
+- 📄 Resume
+- 📬 Contact
+- 🌙 Footer
+
+---
+
+# 📱 Responsive Design
+
+| Desktop | Laptop | Tablet | Mobile |
+|:-------:|:------:|:------:|:------:|
+| ✅ | ✅ | ✅ | ✅ |
+
+---
+
+# 🚀 Performance Goals
+
+- ⚡ Fast Loading
+- 📱 Mobile First
+- ♿ Accessible
+- 🔍 SEO Friendly
+- 🧩 Reusable Components
+- 🧼 Clean Code
+
+---
+
+# 🔮 Future Improvements
+
+- 🌍 Multi-language Support
+- 🌗 Light/Dark Theme Toggle
+- 📝 Blog Section
+- 📊 Project Filtering
+- 📧 Email Integration
+- 🎥 Project Demo Videos
+
+---
+
+# 🤝 Contributing
+
+Contributions, ideas, and feedback are welcome.
+
+1. Fork the repository
+2. Create a feature branch
+
+```bash
+git checkout -b feature/new-feature
+```
+
+3. Commit your changes
+
+```bash
+git commit -m "Add new feature"
+```
+
+4. Push the branch
+
+```bash
+git push origin feature/new-feature
+```
+
+5. Open a Pull Request
+
+---
+
+# 👨‍💻 Author
+
+## Abdurehim Seid
+
+**Full Stack Web Developer**
+
+🌐 Portfolio: https://abdurehims.vercel.app
+
+🐙 GitHub: https://github.com/abdurehims
+
+💼 LinkedIn: https://linkedin.com/in/abdurehims
 
 ---
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=200&section=footer&color=0:0ea5e9,50:2563eb,100:7c3aed"/>
+### ⭐ If you like this project, please give it a star!
+
+Made with ❤️ using React, Tailwind CSS, and Vite.
 
 </div>
+````
